@@ -135,3 +135,6 @@ build-backend = "hatchling.build"
 
 [tool.setuptools]
 packages = ["lerobot"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
