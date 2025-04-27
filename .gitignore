@@ -23,6 +23,12 @@ outputs
 
 # Apple
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # VS Code
 .vscode
@@ -38,11 +44,7 @@ sbatch*.sh
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -56,8 +58,6 @@ parts/
 sdist/
 var/
 wheels/
-pip-wheel-metadata/
-share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -143,8 +143,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
-env/
-venv/
+ENV/
 env.bak/
 venv.bak/
 
@@ -171,3 +170,16 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Virtual Environment
+venv*/
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Project specific
+*.yaml
+*.sh
+test_*.py
